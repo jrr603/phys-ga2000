@@ -11,6 +11,6 @@ f = np.exp(-np.square(x-mu)/(2*variance))/(np.sqrt(2*np.pi*variance))
 
 plt.plot(x,f)
 plt.xlabel('x')
-plt.xlabel('y')
+plt.ylabel('y')
 plt.title('gaussian')
 plt.show()
