@@ -23,12 +23,12 @@ plt.grid()
 plt.show()
 
 def plot_fftcoefficients(data, title= 'yuh'):
-    # Compute the real FFT
+    
     N = len(data)
     fft_values = rfft(data)
     freqs = rfftfreq(N, 1/44100)
     
-    # Plot the magnitudes of the Fourier coefficients
+
     
     plt.plot(freqs[:10000], np.abs(fft_values[:10000]))  
     plt.title(f"{title} - Magnitudes of Fourier Coefficients")
