@@ -51,7 +51,7 @@ def rungekutta(func, x0, y0, h, t):
   return tpoints, positions_list, velocities_list
 
 tpoints, positions_list, velocities_list = rungekutta(f3, 1, 0, 0.01, 20)
-plt.plot(positions_list, velocities_list,label=' $\mu$ = 4')
+plt.plot(positions_list, velocities_list,label=' mu = 4')
 
 '''
 tpoints, positions_list, velocities_list = rungekutta(f2, 2, 0, 0.01, 50)
@@ -69,4 +69,4 @@ plt.legend()
 plt.title('Van Der Pol Oscillator Phase-Space Diagram')
 plt.xlabel('position(m)')
 plt.ylabel('velocity (m/s)')
-plt.show
+plt.show()
